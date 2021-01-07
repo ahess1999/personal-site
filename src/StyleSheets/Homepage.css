@@ -1,0 +1,88 @@
+
+.aboutcontainer {
+    background-image: url(StockSnap_FSPLFPQBCZ.jpg);
+    background-size: cover;
+    padding-bottom: 107px;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+
+.textgrid {
+    text-align: center;
+}
+
+.abouttext {
+    grid-column: 2;
+    font-weight: 700;
+    letter-spacing: 20px;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+#aboutimage {
+    height: 300px;
+    display: inline;
+    padding-bottom: 10px;
+    border-radius: 75%;
+}
+
+
+.description {
+    grid-column: 2;
+    text-align: center;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.proficienciescontainer {
+    text-align: center;
+}
+
+#proficienciestitle {
+    font-weight: 700;
+    font-size: 60px;
+    padding-bottom: 40px;
+    letter-spacing: 4px;
+}
+
+.profgrid {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.proflabel {
+    grid-row: 1;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.educationlist {
+    align-items: center;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.proflist {
+    align-items: center;
+    text-align: left;
+    padding-left: 200px;
+}
+
+@media (min-width: 1440px) {
+    .abouttext {
+        font-size: 60px;
+        letter-spacing: 30px;
+        padding-top: 130px;
+    }
+
+    .description {
+        font-size: 40px;
+        padding-bottom: 104px;
+    }
+
+    #aboutimage {
+        height: 400px;
+    }
+}

@@ -1,0 +1,81 @@
+.cardcontainer {
+    display: grid;
+    color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 999999;
+}
+
+.cardiden {
+    background-color: #0B0C10;
+    color: #45A29E;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#cardimage {
+    width: 400px;
+    height: 270px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#carddesc {
+    color: #C5C6C7;
+    font-weight: 500;
+    text-transform: none;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#cicon {
+    padding-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .cardcontainer{
+        grid-template-rows: 2fr;
+    }
+
+    .cardiden {
+        padding-top: 18px;
+    }
+}
+
+@media (max-width: 750px) {
+    .cardcontainer{
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .cardcontainer{
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #cardimage {
+        display: none;
+    }
+    .cardiden {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .cardcontainer {
+        width: 150px;
+    }
+}
