@@ -1,7 +1,6 @@
 .projcontainer {
     display: grid;
     padding-top: 5%;
-    padding-left: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     font-family: Roboto, sans-serif;
@@ -9,12 +8,14 @@
 
 h1 {
     color: #66FCF1;
+    text-align: center;
     grid-row: 1;
     grid-column: 2;
     font-weight: 700;
     padding-top: 10px;
     letter-spacing: 4px;
     font-size: 90px;
+    padding-left: 0px!important;
 }
 
 .projgrid {
