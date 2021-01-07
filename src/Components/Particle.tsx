@@ -8,7 +8,7 @@ const Particle = () => {
         <Particles params = {{
             particles: {
                 number: {
-                    value: 100,
+                    value: 125,
                     density: {
                         enable: true,
                         value_area: 4500,
