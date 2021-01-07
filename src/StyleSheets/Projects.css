@@ -6,7 +6,7 @@
     font-family: Roboto, sans-serif;
 }
 
-h1 {
+.ph1 {
     color: #66FCF1;
     text-align: center;
     grid-row: 1;
@@ -38,6 +38,7 @@ h1 {
         grid-template-columns: auto auto;
         max-height: 425px;
     }
+
 }
 
 @media (max-width: 1200px) {
@@ -49,5 +50,15 @@ h1 {
 @media (max-width: 750px) {
     .projgrid {
         grid-gap: 60px;
+    }
+    
+    .ph1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ph1 {
+        font-size: 30px;
     }
 }

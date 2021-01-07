@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
 
                 <Link style={{right: 0, position: 'fixed', fontSize:"25px", color:"#66FCF1", textDecoration:"none", padding:"10px"}} to="/">Austin</Link>
                 <div className="projcontainer">
-                    <h1>Projects</h1>
+                    <h1 className="ph1">Projects</h1>
                 </div>
                 
                 <div className="projgrid">
