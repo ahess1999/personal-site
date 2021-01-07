@@ -62,7 +62,7 @@ const Startpage: React.FC = () => {
         <motion.div initial='initial' animate='in' exit='out' variants={pageVariants} transition={pageTransition}>
             
             <div className="startcontainer">
-                <Particle/>
+                
                 <motion.nav initial={false} custom={height} animate={isOpen ? "open" : "closed"} ref={containerRef}>
                     <motion.div className="background" variants={sidebar}/>
                     <NavigationBar/>

@@ -55,7 +55,6 @@ h2 {
 .introcontainer {
     display: grid;
     padding-top: 10%;
-    padding-left: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: Roboto, sans-serif;
 }
@@ -170,7 +169,7 @@ h2 {
 
     #aboutimage {
         height: 200px;
-        margin-left: 20%;
+        margin-left: 15%;
     }
 
     .contactcont {
