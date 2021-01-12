@@ -14,6 +14,7 @@ import {Angular} from '@styled-icons/fa-brands/Angular';
 import {Python} from '@styled-icons/simple-icons/Python';
 import {Postgresql} from '@styled-icons/simple-icons/Postgresql';
 import {Django} from '@styled-icons/simple-icons/Django';
+import {Javascript} from '@styled-icons/boxicons-logos/Javascript';
 
 interface Props {
     name?: string,
@@ -47,7 +48,7 @@ const Card: React.FC<Props> = ({name, url}) => {
     function getCardname(name) {
         if(name === "mysite") setCardname("My Site");
         if(name === "dinodiner") setCardname("Dino Diner");
-        if(name === "ksfarm") setCardname("Kansas Farmers Markey Layout");
+        if(name === "ksfarm") setCardname("Kansas Farmers Market Layout");
         if(name === "spotifysent") setCardname("Spotify Sentiment Analysis");
     }
 
@@ -90,7 +91,7 @@ const Card: React.FC<Props> = ({name, url}) => {
             return (
                 <div>
                     <ReactLogo style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
-                    <Typescript style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
+                    <Javascript style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
                     <Html5 style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
                     <Css3 style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
                     <Python style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
