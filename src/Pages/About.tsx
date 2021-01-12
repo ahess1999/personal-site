@@ -82,12 +82,12 @@ const About: React.FC = () => {
             <div className="aboutcontainer">
                 <h1>About me</h1>
                 <div className="desca">
-                    Aspiring Web Developer currently enrolled at Kansas State University
+                    Aspiring Software Engineer currently enrolled at Kansas State University
                     pursuing a degree in Computer Science. I've been programming for 3 years and 
                     I'm constantly trying to learn something new everyday.
                     <br/>
                     <br/>
-                    I'm a Hard-working, well-organized individual who shows attention to every detail.
+                    I'm a hard-working, well-organized individual who shows attention to every detail.
                     <br/> Big NBA fan and everything basketball, getting outside and enjoying life!
                     <br/>
                     <br/>
