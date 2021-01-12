@@ -68,14 +68,11 @@
 
 @media (max-width: 500px) {
     #cardimage {
-        display: none;
-    }
-    .cardiden {
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
+        width: 200px;
+        height: 200px;
     }
 
     .cardcontainer {
-        width: 150px;
+        width: 200px;
     }
 }

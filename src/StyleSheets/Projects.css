@@ -58,6 +58,9 @@
 }
 
 @media (max-width: 480px) {
+    .projgrid {
+        max-height: 500px;
+    }
     .ph1 {
         font-size: 30px;
     }
