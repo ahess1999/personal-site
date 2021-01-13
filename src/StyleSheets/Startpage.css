@@ -175,8 +175,7 @@ h2 {
     .contactcont {
         width: 6%;
         position: fixed;
-        bottom: 20px;
-        right: 65px;
-        display: none;
+        bottom: 40px;
+        right: 20px;
     }
 }

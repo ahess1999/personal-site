@@ -53,6 +53,7 @@ h1 {
 @media (max-width: 1440px) {
     .aboutcontainer {
         grid-template-columns: 1fr 2fr 1fr !important;
+        padding-top: 7%!important;
     }
 
     h1 {
@@ -151,6 +152,5 @@ h1 {
         position: fixed;
         bottom: 20px;
         right: 65px;
-        display: none;
     }
 }

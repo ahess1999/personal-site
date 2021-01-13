@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .projcontainer {
     display: grid;
     padding-top: 5%;
