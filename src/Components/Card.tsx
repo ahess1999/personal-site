@@ -4,6 +4,8 @@ import dino from '../StyleSheets/dinodiner.png';
 import mysite from '../StyleSheets/mysite.png';
 import ksfarm from '../StyleSheets/ksfarm.png';
 import spotifysent from '../StyleSheets/spotifysent.png';
+import tictac from '../StyleSheets/tictactoe.png';
+import cs4ks from '../StyleSheets/cs4ks.png';
 import '../StyleSheets/Card.css'
 import {Csharp} from '@styled-icons/simple-icons/Csharp';
 import {Css3} from '@styled-icons/boxicons-logos/Css3';
@@ -15,6 +17,8 @@ import {Python} from '@styled-icons/simple-icons/Python';
 import {Postgresql} from '@styled-icons/simple-icons/Postgresql';
 import {Django} from '@styled-icons/simple-icons/Django';
 import {Javascript} from '@styled-icons/boxicons-logos/Javascript';
+import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs';
+import {Sqlite} from '@styled-icons/simple-icons/Sqlite';
 
 interface Props {
     name?: string,
@@ -43,6 +47,8 @@ const Card: React.FC<Props> = ({name, url}) => {
         if(name === "dinodiner") setImage(dino);
         if(name === "ksfarm") setImage(ksfarm);
         if(name === "spotifysent") setImage(spotifysent);
+        if(name === "tictactoe") setImage(tictac);
+        if(name === "cs4ks") setImage(cs4ks);
     }
 
     function getCardname(name) {
@@ -50,6 +56,8 @@ const Card: React.FC<Props> = ({name, url}) => {
         if(name === "dinodiner") setCardname("Dino Diner");
         if(name === "ksfarm") setCardname("Kansas Farmers Market Layout");
         if(name === "spotifysent") setCardname("Spotify Sentiment Analysis");
+        if(name === "tictactoe") setCardname("Ultimate Tic-Tac-Toe");
+        if(name === "cs4ks") setCardname("Computer Science for Kansas Website");
     }
 
     function getDesc(name) {
@@ -57,6 +65,8 @@ const Card: React.FC<Props> = ({name, url}) => {
         if(name === "dinodiner") setDesc("Dino Diner is an object oriented restaurant designed in CIS 400 at Kansas State University.");
         if(name === "ksfarm") setDesc("Website layout designed in Angular for CIS 642 at Kansas State University.");
         if(name === "spotifysent") setDesc("CURRENTLY UNDER CONSTRUCTION.");
+        if(name === "tictactoe") setDesc("Ultimate Tic-Tac-Toe was designed using C# in CIS 300 at Kansas State University.");
+        if(name === "cs4ks") setDesc("First site I created in CIS 526 in Kansas State University.");
     }
 
     function getIcons(name) {
@@ -97,6 +107,24 @@ const Card: React.FC<Props> = ({name, url}) => {
                     <Python style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
                     <Django style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
                     <Postgresql style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
+                </div>
+            );
+        }
+        if(name === "tictactoe") {
+            return (
+                <div>
+                    <Csharp style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
+                </div>
+            );
+        }
+        if(name === "cs4ks") {
+            return (
+                <div>
+                    <Nodejs style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
+                    <Javascript style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
+                    <Html5 style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
+                    <Css3 style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
+                    <Sqlite style={{width:'40px', height:'40px', paddingTop:'10px'}}/>
                 </div>
             );
         }

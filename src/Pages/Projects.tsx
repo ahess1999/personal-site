@@ -78,6 +78,8 @@ const Projects: React.FC = () => {
                         <Card name="mysite"/>
                         <Card name="dinodiner" url="https://github.com/ahess1999/dino-diner"/>
                         <Card name="ksfarm" url="https://github.com/ahess1999/farmers-market-app"/>
+                        <Card name="cs4ks" url="https://github.com/ahess1999/cs4ks"/>
+                        <Card name="tictactoe" url="https://github.com/ahess1999/ultimate-tic-tac-toe"/>
                         <Card name="spotifysent"/>
                 </div>
                 
