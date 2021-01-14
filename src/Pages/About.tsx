@@ -82,7 +82,7 @@ const About: React.FC = () => {
             <div className="aboutcontainer">
                 <h1>About me</h1>
                 <div className="desca">
-                    Aspiring Software Engineer currently enrolled at Kansas State University
+                    Software Engineer currently enrolled at Kansas State University
                     pursuing a degree in Computer Science. I've been programming for 3 years and 
                     I'm constantly trying to learn something new everyday.
                     <br/>
