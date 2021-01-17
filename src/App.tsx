@@ -16,7 +16,6 @@ function App() {
           <Route path='/projects' component={Projects}/>
           <Route path='/about' component={About}/>
           <Route path='/contact' component={Contact}/>
-          <Route path='/resume' component={Resume}/>
           <Route path='/' component={Startpage}/>
         </Switch>
     </AnimatePresence>
