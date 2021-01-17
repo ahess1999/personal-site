@@ -22,9 +22,9 @@ const ContactTag: React.FC = () => {
     return (
         <div className="tagcontainer">
             <div className="contactlabel">Resume</div>
-            <Link to="/resume">
+            <a href="AustinHessResume.pdf">
                 <MenuBookIcon className={styles.clickableIcon}/>
-            </Link>
+            </a>
             <div className="contactlabel">Email&nbsp;</div>
             <Link to="">
                 <EmailIcon onClick={event =>  window.location.href="mailto:ahess@ksu.edu"} className={styles.clickableIcon}/>
