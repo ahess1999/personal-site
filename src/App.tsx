@@ -6,7 +6,6 @@ import Projects from "./Pages/Projects";
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Startpage from './Pages/Startpage';
-import Resume from './Pages/Resume';
 
 function App() {
   let location = useLocation();
