@@ -1,49 +1,76 @@
-import React from 'react';
+import React, { useRef } from 'react'
+import { motion, useCycle } from 'framer-motion';
 import '../StyleSheets/Homepage.css';
-import Austin from './AustinHess.jpg'
 import NavigationBar from '../Components/NavigationBar';
-import { motion } from 'framer-motion';
+import { useDimensions } from '../dimensions';
+import MenuToggle from '../Components/MenuToggle';
+import { Link } from 'react-router-dom';
+import ContactTag from '../Components/ContactTag';
+import Particle from '../Components/Particle';
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
 
-const pageVariants = {
-    initial: {
-        opacity: 0,
-        y: "-100vh",
-        scale: 0.8
-    },
-    in: {
-        opacity: 1,
-        y: 0,
-        scale: 1
-    },
-    out: {
-        opacity: 0,
-        y: "-100vh",
-        scale: 1.2
+const sidebar = {
+    open: (height = 1000) => ({
+      clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+      transition: {
+        type: "spring",
+        stiffness: 20,
+        restDelta: 2
+      }
+    }),
+    closed: {
+      clipPath: "circle(30px at 40px 40px)",
+      transition: {
+        delay: 0.5,
+        type: "spring",
+        stiffness: 400,
+        damping: 40
+      },
     }
-};
-
-const pageTransition = {
-    type: "tween",
-    ease: "anticipate",
-    duration: 1
-}
+  };
 
 const Homepage: React.FC = () => {
+    const [isOpen, toggleOpen] = useCycle(false, true);
+    const containerRef = useRef(null);
+    const { height } = useDimensions(containerRef);
+
     return (
-        <motion.div initial='initial' animate='in' exit='out' variants={pageVariants} transition={pageTransition}>
-            <div className="aboutcontainer">
-                
-                <div className='textgrid'>
-                    <p className='abouttext'>AUSTIN HESS</p>
+        <div>
+            
+            <div className="startcontainer">
+                <Particle/>
+                <div className="navcontainer">
+                    <motion.nav initial={false} custom={height} animate={isOpen ? "open" : "closed"} ref={containerRef}>
+                        <motion.div className="background" variants={sidebar}/>
+                        <NavigationBar/>
+                        <MenuToggle toggle={() => toggleOpen()}/>
+                    </motion.nav>
                 </div>
-                <div className='aboutgrid'>
-                    <img id='aboutimage' src={Austin} alt={Austin}></img>
-                    <p className='description'>Software Developer</p>
+                
+                <a href="/" className="logobutton">Austin</a>
+
+                <section id="Home" className="introcontainer">
+                    <div className="hiintro">Hello, I'm</div>
+                    <h1 className="head">Austin Hess</h1>
+                    <h1 className="headtitle">Software Engineer</h1>
+                    <div className="desc">Software engineer who currently resides in Manhattan, KS
+                        <br/>
+                        and is working towards his Bachelors degree in Computer Science
+                        <br/>
+                        at Kansas State University
+                    </div>
+                </section>
+            <About/>
+            <Projects/>
+            <Contact/>
+                <div className="contactcont">
+                    <ContactTag/>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
-
-export default Homepage;
+export default Homepage

@@ -21,22 +21,42 @@ const ContactTag: React.FC = () => {
 
     return (
         <div className="tagcontainer">
-            <div className="contactlabel">Resume</div>
+            
             <a href="AustinHessResume.pdf">
                 <MenuBookIcon className={styles.clickableIcon}/>
             </a>
-            <div className="contactlabel">Email&nbsp;</div>
+
+            <a href="AustinHessResume.pdf" style={{textDecoration: 'none'}}>
+                <div className="contactlabel">Resume</div>
+            </a>
+
+            
             <Link to="">
                 <EmailIcon onClick={event =>  window.location.href="mailto:ahess@ksu.edu"} className={styles.clickableIcon}/>
             </Link>
-            <div className="contactlabel">GitHub&nbsp;</div>
+
+            <Link to="" style={{textDecoration: 'none'}}>
+                <div className="contactlabel">Email&nbsp;</div>
+            </Link>
+
+            
             <Link to="">
                 <GitHubIcon onClick={event =>  window.location.href='https://github.com/ahess1999'} className={styles.clickableIcon}/>
             </Link>
-            <div className="contactlabel">FaceBook&nbsp;</div>
+
+            <Link to="" style={{textDecoration: 'none'}}>
+                <div className="contactlabel">GitHub&nbsp;</div>
+            </Link>
+            
+            
             <Link to="">
                 <FaceBookIcon onClick={event =>  window.location.href='https://www.facebook.com/austin.hess.507'} className={styles.clickableIcon}/>
             </Link>
+
+            <Link to="" style={{textDecoration: 'none'}} >
+                <div className="contactlabel">FaceBook&nbsp;</div>
+            </Link>
+
         </div>
     )
 }

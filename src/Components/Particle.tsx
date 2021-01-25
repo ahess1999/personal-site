@@ -1,8 +1,7 @@
 import React from 'react'
 import Particles from 'react-particles-js';
-import '../StyleSheets/Particle.css';
 
-const Particle = () => {
+const Particle: React.FC = () => {
     return (
         <div style={{position: 'absolute', zIndex: 0, height: '100vh', width: '100vw'}}>
         <Particles params = {{

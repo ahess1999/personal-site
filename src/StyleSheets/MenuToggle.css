@@ -1,4 +1,4 @@
-button {
+.togbutton {
     outline: none!important;
     border: none;
     -webkit-user-select: none;

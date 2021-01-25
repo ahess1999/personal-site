@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import Projects from "./Pages/Projects";
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import Startpage from './Pages/Startpage';
+import Homepage from './Pages/Homepage';
 
 function App() {
   let location = useLocation();
@@ -15,7 +15,7 @@ function App() {
           <Route path='/projects' component={Projects}/>
           <Route path='/about' component={About}/>
           <Route path='/contact' component={Contact}/>
-          <Route path='/' component={Startpage}/>
+          <Route path='/' component={Homepage}/>
         </Switch>
     </AnimatePresence>
   );

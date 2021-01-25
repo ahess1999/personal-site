@@ -5,7 +5,8 @@ import InfoIcon from '@material-ui/icons/Info';
 import CreateIcon from '@material-ui/icons/Create';
 import PersonIcon from '@material-ui/icons/Person';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+import {Link} from 'react-scroll';
 import '../StyleSheets/MenuItem.css';
 
 const useStyles = makeStyles({ 
@@ -57,7 +58,7 @@ const MenuItem = ({ i }) => {
   function selectIcon(i) {
     if(i === "Home") {
       setIcon(<HomeIcon className={styles.clickableIcon}/>)
-      setLink("")
+      setLink("Home")
     } 
     if(i === "About") {
       setIcon(<InfoIcon className={styles.clickableIcon}/>)
@@ -80,8 +81,8 @@ const MenuItem = ({ i }) => {
       whileTap={{ scale: 0.95 }}
     >
       
-      <Link style={{textDecoration: 'none'}} to={link}><div className="icon-placeholder">{icon}</div></Link>
-      <Link style={{textDecoration: 'none'}} to={link}><div className="text-placeholder">{i}</div></Link>
+      <Link style={{textDecoration: 'none'}} to={link} spy={true} smooth={true} duration={500}><div className="icon-placeholder">{icon}</div></Link>
+      <Link style={{textDecoration: 'none'}} to={link} spy={true} smooth={true} duration={500}><div className="text-placeholder">{i}</div></Link>
     </motion.li>
   );
 };

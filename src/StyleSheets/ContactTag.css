@@ -7,6 +7,11 @@
     grid-gap: 8px;
 }
 
+.contactlabel {
+    padding-top: 3px;
+    color: #C5C6C7;
+}
+
 @media (max-width: 768px) {
     .tagcontainer {
         display: grid;
