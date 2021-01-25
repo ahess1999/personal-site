@@ -110,6 +110,10 @@
         display: grid;
         grid-template-columns: 80px 80px 80px 80px 80px;
     }
+
+    .abouttag {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 500px) {

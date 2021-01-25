@@ -72,6 +72,9 @@
     .cardcontainer{
         grid-template-rows: 2fr;
     }
+    .cardinner {
+        padding: 30px;
+    }
 
     .cardiden {
         padding-top: 18px;

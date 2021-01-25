@@ -104,6 +104,9 @@
         margin: 0px auto;
         z-index: 999999;
     }
+    .contlabel {
+        font-size: 35px;
+    }
 
     .descc {
         color: #C5C6C7;

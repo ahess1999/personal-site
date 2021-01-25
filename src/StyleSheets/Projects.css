@@ -23,7 +23,7 @@
     font-weight: 700;
     padding-bottom: 50px;
     letter-spacing: 4px;
-    font-size: 60px;
+    font-size: 35px;
 }
 
 .carouselcont {
@@ -88,6 +88,9 @@
         width: 50%;
         padding-bottom: 15%;
         gap: 30px;
+    }
+    .ph1 {
+        font-size: 35px;
     }
 }
 
