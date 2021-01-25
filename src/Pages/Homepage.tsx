@@ -4,7 +4,6 @@ import '../StyleSheets/Homepage.css';
 import NavigationBar from '../Components/NavigationBar';
 import { useDimensions } from '../dimensions';
 import MenuToggle from '../Components/MenuToggle';
-import { Link } from 'react-router-dom';
 import ContactTag from '../Components/ContactTag';
 import Particle from '../Components/Particle';
 import About from './About';
