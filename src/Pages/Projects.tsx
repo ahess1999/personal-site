@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
                         <Card name="ksfarm" url="https://github.com/ahess1999/farmers-market-app" url2=""/>
                         <Card name="cs4ks" url="https://github.com/ahess1999/cs4ks" url2="https://cs4ks.herokuapp.com/"/>
                         <Card name="tictactoe" url="https://github.com/ahess1999/ultimate-tic-tac-toe" url2=""/>
-                        <Card name="spotifysent"/>
+                        <Card name="spotifysent" url="https://github.com/ahess1999/spotify-sentiment-analysis" url2=""/>
                     </div>
             </div>
         </div>
