@@ -36,7 +36,7 @@ const ContactTag: React.FC = () => {
             </Link>
 
             <Link to="" style={{textDecoration: 'none'}}>
-                <div className="contactlabel">Email&nbsp;</div>
+                <div onClick={event =>  window.location.href="mailto:ahess@ksu.edu"} className="contactlabel">Email&nbsp;</div>
             </Link>
 
             
@@ -45,7 +45,7 @@ const ContactTag: React.FC = () => {
             </Link>
 
             <Link to="" style={{textDecoration: 'none'}}>
-                <div className="contactlabel">GitHub&nbsp;</div>
+                <div onClick={event =>  window.location.href='https://github.com/ahess1999'} className="contactlabel">GitHub&nbsp;</div>
             </Link>
             
             
@@ -54,7 +54,7 @@ const ContactTag: React.FC = () => {
             </Link>
 
             <Link to="" style={{textDecoration: 'none'}} >
-                <div className="contactlabel">FaceBook&nbsp;</div>
+                <div onClick={event =>  window.location.href='https://www.facebook.com/austin.hess.507'} className="contactlabel">FaceBook&nbsp;</div>
             </Link>
 
         </div>
