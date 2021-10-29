@@ -21,7 +21,7 @@ const About: React.FC = () => {
         </div>
         <div className="desca">
           Software Engineer currently employed at Paycom in Oklahoma City, OK. I
-          atteneded Kansas State University where I received my degree in
+          atteneded Kansas State University where I received my Bachelor's Degree in
           Computer Science. I've been programming for over 3 years and I'm
           constantly trying to learn something new everyday.
           <br />
