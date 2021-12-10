@@ -2,13 +2,15 @@ import React, { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 import "../StyleSheets/Homepage.css";
 import NavigationBar from "../Components/NavigationBar";
-import { useDimensions } from "../dimensions";
+import { useDimensions } from "../../dimensions";
 import MenuToggle from "../Components/MenuToggle";
 import ContactTag from "../Components/ContactTag";
 import Particle from "../Components/Particle";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import GlobalNavBar from "../../Shared/GlobalNavBar";
+import { HOMEPAGE } from "../../Shared/Constants";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -40,6 +42,9 @@ const Homepage: React.FC = () => {
       <div className="startcontainer">
         <Particle />
         <div className="navcontainer">
+          <div className="desktopnav">
+            <GlobalNavBar colorTheme={HOMEPAGE} />
+          </div>
           <motion.nav
             initial={false}
             custom={height}
@@ -51,10 +56,6 @@ const Homepage: React.FC = () => {
             <MenuToggle toggle={() => toggleOpen()} />
           </motion.nav>
         </div>
-
-        <a href="/" className="logobutton">
-          Austin
-        </a>
 
         <section id="Home" className="introcontainer">
           <div className="hiintro">Hello, I'm</div>
