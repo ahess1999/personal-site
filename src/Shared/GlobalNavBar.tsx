@@ -1,4 +1,5 @@
 import React from "react";
+import { HOMEPAGE_NAV_COLOR, SPOTIFY_NAV_COLOR } from "./Constants";
 
 interface Props {
   colorTheme: any;
@@ -6,9 +7,8 @@ interface Props {
 
 const GlobalNavBar: React.FC<Props> = ({ colorTheme }) => {
   function getColorTheme(colorTheme: string): string {
-    if (colorTheme === "HOMEPAGE") {
-      return "#66FCF1";
-    }
+    if (colorTheme === "HOMEPAGE") return HOMEPAGE_NAV_COLOR;
+    if (colorTheme === "SPOTIFY") return SPOTIFY_NAV_COLOR;
   }
 
   const containerStyles: Object = {
@@ -28,10 +28,6 @@ const GlobalNavBar: React.FC<Props> = ({ colorTheme }) => {
     <div style={containerStyles}>
       <a href="/" style={itemStyles}>
         Home
-      </a>
-      <div style={itemStyles}>/</div>
-      <a href="/" style={itemStyles}>
-        Spotify
       </a>
     </div>
   );

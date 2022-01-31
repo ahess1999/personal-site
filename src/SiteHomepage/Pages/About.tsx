@@ -1,6 +1,6 @@
 import React from "react";
 import "../StyleSheets/About.css";
-import Particle from "../Components/Particle";
+import Particle from "../../Shared/Particle";
 import Austin from "./AustinHess.jpg";
 import { Csharp } from "@styled-icons/simple-icons/Csharp";
 import { Css3 } from "@styled-icons/boxicons-logos/Css3";
@@ -21,8 +21,8 @@ const About: React.FC = () => {
         </div>
         <div className="desca">
           Software Engineer currently employed at Paycom in Oklahoma City, OK. I
-          atteneded Kansas State University where I received my Bachelor's Degree in
-          Computer Science. I've been programming for over 3 years and I'm
+          attended Kansas State University where I received my Bachelor's Degree
+          in Computer Science. I've been programming for over 3 years and I'm
           constantly trying to learn something new everyday.
           <br />
           <br />

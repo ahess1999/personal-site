@@ -5,7 +5,7 @@ import NavigationBar from "../Components/NavigationBar";
 import { useDimensions } from "../../dimensions";
 import MenuToggle from "../Components/MenuToggle";
 import ContactTag from "../Components/ContactTag";
-import Particle from "../Components/Particle";
+import Particle from "../../Shared/Particle";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";

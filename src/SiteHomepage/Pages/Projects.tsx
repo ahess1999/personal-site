@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Card from "../Components/Card";
 import "../StyleSheets/Projects.css";
-import Particle from "../Components/Particle";
+import Particle from "../../Shared/Particle";
 import axios from "axios";
-import { LinearProgress } from "@material-ui/core";
+import { Box, CircularProgress } from "@material-ui/core";
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(process.env.REACT_APP_API_URL + "/github/repos").then((res) => {
+    axios.get(process.env.REACT_APP_API_URL + "/").then((res) => {
       setProjects(res.data);
       setLoading(false);
     });
@@ -25,7 +25,15 @@ const Projects: React.FC = () => {
         </h1>
         <div className="carouselcont">
           {loading ? (
-            <LinearProgress style={{ width: "950px" }} />
+            <Box
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                width: "50vw",
+              }}
+            >
+              <CircularProgress style={{ width: "75px", height: "75px" }} />
+            </Box>
           ) : (
             projects.map((index, i) => {
               return (
