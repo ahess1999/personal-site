@@ -10,6 +10,7 @@ import { Javascript } from "@styled-icons/boxicons-logos/Javascript";
 import { Mysql } from "@styled-icons/simple-icons/Mysql";
 import { Python } from "@styled-icons/simple-icons/Python";
 import { Typescript } from "@styled-icons/simple-icons/Typescript";
+import { Php } from "@styled-icons/simple-icons/Php";
 
 const About: React.FC = () => {
   return (
@@ -37,9 +38,9 @@ const About: React.FC = () => {
           only looks good, but is highly functional too.
           <img id="aboutimage" src={Austin} alt={Austin}></img>
         </div>
-
+        <br />
         <div className="languages">
-          Languages
+          Languages:
           <div className="langgrid">
             <Csharp
               style={{ width: "40px", height: "40px", paddingTop: "10px" }}
@@ -63,6 +64,9 @@ const About: React.FC = () => {
               style={{ width: "40px", height: "40px", paddingTop: "10px" }}
             />
             <Typescript
+              style={{ width: "40px", height: "40px", paddingTop: "10px" }}
+            />
+            <Php
               style={{ width: "40px", height: "40px", paddingTop: "10px" }}
             />
           </div>

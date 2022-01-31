@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                width: "50vw",
+                width: "60vw",
               }}
             >
               <CircularProgress style={{ width: "75px", height: "75px" }} />
